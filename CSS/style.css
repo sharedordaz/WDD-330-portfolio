@@ -1,0 +1,18 @@
+p,a,li,h1,h2,h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(../images/leather.jpg);
+    padding: 5% 3% 0% 5%;
+}
+main{
+    background-image: url(../images/paper.jpg);
+    box-shadow: 5px 5px 10px black;
+
+    padding: 2em;
+}
+.title-div{
+    background-image: url(../images/yellowPaper.jpg);
+    box-shadow: 1px 1px 1px black;
+    text-align: center;
+}
