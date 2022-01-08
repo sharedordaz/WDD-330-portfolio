@@ -14,6 +14,57 @@
             <li>Mobile devices are becoming more used that laptops and pc</li>
             <li>We have to put attention to smarthphones as programmers</li>
         </ul>
+        <h3>Classes syntax</h3>
+        <p>You just say Class and its name. After that you create the "constructor" method (__init__ in python) and its arguments. To refer to any class instance, you can say <i>this</i> (self in python).</p>
+        <code>class hello{<br>
+            &emsp;constructor(arguments){<br>
+            &emsp;&emsp;this.nine = 9
+            }
+        };</code> 
+        <br>
+        <p>Creating a method in javascript is really easy, you just write the name of the method and the arguments within a parenthesis.</p>
+        <code>class hello{<br>
+            &emsp;constructor(arguments){<br>
+            &emsp;&emsp;this.nine = 9;
+            }
+            <br><br>
+            &emsp;method(){<br>
+            &emsp;&emsp;return "methodresult";}
+
+            }
+        };</code> 
+        
+        <p>To inherit from another class, you use the <i>extends</i> keyword.</p>
+        <code>class hello extends parent{<br>
+            &emsp;constructor(arguments){<br>
+            &emsp;&emsp;this.nine = 9;
+            }
+            <br><br>
+            &emsp;method(){<br>
+            &emsp;&emsp;return "methodresult";}
+
+            }
+        };</code> 
+        <p>We access to the arguments, methods and variables of the parent class with the <i>super</i> keyword. In this example we are accesing to the <i>name</i> argument.</p>
+        <code>
+            class parent{<br>
+            &emsp;constructor(name){<br>
+            &emsp;&emsp;this.name = name;<br>
+            &emsp;}<br>
+            }<br>
+            <br>
+            class hello extends parent{<br>
+            &emsp;constructor(arguments){<br>
+            &emsp;&emsp;this.nine = 9;<br>
+            &emsp;&emsp;super(name);<br>
+            }
+            <br><br>
+            &emsp;method(){<br>
+            &emsp;&emsp;return "methodresult";}
+
+            }
+        };</code> 
+        <br> <br> <br>
         <a href="../index.html">Back to index</a>
     </main>
 </body>
