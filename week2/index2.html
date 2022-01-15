@@ -9,7 +9,47 @@
 </head>
 <body>
     <main>
-        <p>Not Yet</p>
+        <h1>Use of XML</h1>
+
+        <h3>What is Xml?</h3>
+        <p>Means "e<b>X</b>tensible <b>M</b>arkup <b>L</b>anguage." Is really similar to HTML in its syntax but have other purposes, like the storage or communication of information (similar to JSON).</p>
+        
+        <h3>Basic Syntax</h3>
+        <p>XML syntax is pretty similar to the one in HTML, because it uses tags. The difference is that in HTML we have pre-existent tags with assigned names like <code>&lt;div&gt;,&lt;p&gt;</code> or <code>&lt;body&gt;</code> and in XML we can create tags with whatever tag we want like
+           <code>&lt;hello&gt;</code> or <code>&lt;avocados&gt;</code>. We just have to take into account that lower or upper case in the tag names affects the sintax.</p>
+
+        <h3>Start writting your code</h3>
+        <p>To start your XML code you just need to write a special tag called <b>XML Prolog</b></p>
+        <code> &lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+
+        <h3>Organization</h3>
+        <p>XML is organized with indentation. You create a <b>root</b> tag and this element will "embrace" all the tags that will become the <b>child</b> tags. </p>
+        <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;code&gt;
+    &lt;mytitle&gt;First XML&lt;/mytitle&gt;
+    &lt;paragraph&gt;
+        &lt;mytext&gt;Hello World&lt;/mytext&gt;
+        &lt;MyText&gt;Lorem Itsum&lt;/MyText&gt;
+    &lt;/paragraph&gt;
+&lt;/code&gt;    
+        </code></pre>
+        <p>If you notice, we created the <i>code</i> tag as the tag that embrace all our code. We also created a <i>title</i> tag that contains a small text. Hope you can notice that we created the <i>paragraph</i> tag that is the parent of <i>mytext</i> and <i>MyText</i> tags.
+           Those tags are independent because one is in lower case and the other one isn't</p>
+
+        <h3>Attributes</h3>
+        <p>XML can have attributes like the HTML tags have. The difference is that those attributes can have whatever name you want.</p>
+        <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;code&gt;
+    &lt;mytitle eatingChips="True"&gt;First XML&lt;/mytitle&gt;
+    &lt;paragraph&gt;
+        &lt;mytext&gt;Hello World&lt;/mytext&gt;
+        &lt;MyText&gt;Lorem Itsum&lt;/MyText&gt;
+    &lt;/paragraph&gt;
+&lt;/code&gt;    
+        </code></pre>
+
+        <h2>Fetch an XML File in Javacript</h2>
+        <p></p>
         <a href="../index.html">Back to index</a>
     </main>
 </body>

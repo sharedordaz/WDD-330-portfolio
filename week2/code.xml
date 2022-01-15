@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<code>
+    <mytitle eatingChips="True">First XML</mytitle>
+    <paragraph>
+        <mytext>Hello World</mytext>
+        <MyText>Lorem Itsum</MyText>
+    </paragraph>
+</code>    
