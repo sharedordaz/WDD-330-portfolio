@@ -16,3 +16,10 @@ main{
     box-shadow: 1px 1px 1px black;
     text-align: center;
 }
+
+/**Week 2*/
+#XMLfetch{
+    background-color:grey;
+    color:white;
+    padding:2px;
+}
