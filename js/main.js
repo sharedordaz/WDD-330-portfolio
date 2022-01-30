@@ -6,6 +6,8 @@ let olarray = [
                  url: "week2/index2.html"},
                 {label: "Week 3",
                  url: "week3/index3.html"},
+                {label: "Week 4",
+                 url: "week4/index4.htm"},
                 
                 ];
 
@@ -21,3 +23,4 @@ olarray.forEach( () => {
 
     index += 1
 });
+

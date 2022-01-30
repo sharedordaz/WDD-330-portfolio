@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Week 2</title>
+</head>
+<body>
+    <main>
+        <h1>What did i do this week</h1>
+        <h3>Forms</h3>
+        <p>A form is an special html element that is made to contain input and label elements, to, reduntanly saying, build a form.</p>
+        <p>This is really useful because all the inputs you use are from the same form</p>
+        <strong>You can notice that text in inputs 1 and 2 clears when you click on "reset". Input 3 will dont erase with the same button because is from a different form</strong>
+        <form>
+            <label for="1">Enter text 1:</label><input type="text" id="1" name="1"><br>
+            <label for="2">Enter text 2:</label><input type="text" id="2" name="2"><br>
+            <input type="reset" ><br>
+        </form>
+        <form>
+            <label for="3">Enter text 3:</label><input type="text" id="3" name="3"><br>
+            <input type="reset" >
+        </form>
+
+        <p>Another form example</p>
+        <a href="https://sharedordaz.github.io/museo-del-holocausto/json-append.html" target="_blank"><button >Form example</button></a><br><br>
+
+
+        <h3>Import and export</h3>
+        <p>Like in python, you can import functions that you (or other people) create and use them in new code.</p>
+        <p>An interesting difference is that you have to "export" a piece of code to make it able to be imported. You can import an export variables, functions and classes. Here we will export a function</p>
+<pre><code>export function sum_numbers (a,b){
+    return a + b;
+}
+</code></pre>
+        <p>Lets say this function is from the file <b>sum.js</b>, so if we want to import this function from another file, we just have to write in our program</p>
+        <code>import {sum_numbers} from 'sum.js';</code>
+        <p>So now we can use that external function in our code</p>
+        <code>console.log(sum_numbers(2,2))</code>
+        <p>It prints 4</p>
+
+        <strong>Why this is useful?</strong>
+        <p>Is useful because this let us to have an order, and to use functions from different javascript programs in on "brain" program</p>
+        <a href="../index.html">Back to index</a>
+    </main>
+</body>
+</html>
