@@ -1,3 +1,4 @@
+'use strict';
 let olarray = [
                 {label: "Week 1", 
                  url: "week1/index1.html"},
@@ -8,6 +9,8 @@ let olarray = [
                  url: "week3/index3.html"},
                 {label: "Week 4",
                  url: "week4/index4.htm"},
+                {label: "Week 5",
+                 url: "week5/index5.html"},
                 
                 ];
 
@@ -24,3 +27,4 @@ olarray.forEach( () => {
     index += 1
 });
 
+//throw new Error('Life is an error');
