@@ -1,5 +1,7 @@
 'use strict';
-let olarray = [
+let olarray = [ 
+                {label: "TODO App", 
+                 url: "TODO/todo.html"},
                 {label: "Week 1", 
                  url: "week1/index1.html"},
 
@@ -10,8 +12,7 @@ let olarray = [
                 {label: "Week 4",
                  url: "week4/index4.htm"},
                 {label: "Week 5",
-                 url: "week5/index5.html"},
-                
+                 url: "week5/index5.html"},    
                 ];
 
 let ol = document.querySelector("ol");
