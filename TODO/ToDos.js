@@ -1,5 +1,3 @@
-console.log("Code opened");
-
 import { nothing_screen, falsefilter, truefilter, clearinput } from "./utilities.js";
 import { toDoList, month } from "./ls.js";
 
