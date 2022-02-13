@@ -1,7 +1,7 @@
 console.log("Code opened");
 
-import { nothing_screen, falsefilter, truefilter, clearinput } from "/TODO/utilities.js";
-import { toDoList, month } from "/TODO/ls.js";
+import { nothing_screen, falsefilter, truefilter, clearinput } from "./TODO/utilities.js";
+import { toDoList, month } from "./TODO/ls.js";
 
 let button = document.getElementById("add-button");
 button.addEventListener("click", addbutton);
