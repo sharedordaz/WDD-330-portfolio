@@ -40,3 +40,23 @@
     border: none;
     padding:10px;
 }
+
+.info{
+    border: 1px solid black;
+    width:20em;
+    padding:1em;
+}
+
+.info p:nth-child(1){
+    background-color: gainsboro;
+    padding:10px;
+}
+.info p:nth-child(1):hover{
+    background-color: gainsboro;
+    
+}
+
+.info p:hover{
+    background-color: darkgray;
+}
+
