@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Week 7</title>
+</head>
+<body>
+    <main>
+        <h1>Week study</h1>
+        <h3>Function methods</h3>
+        <p>In javascript, like arrays, strings or other kind of element, there are methods for functions</p>
+        <p><b>Call method: </b>This method let you to assign the "this" keyword to an specific object, for example:</p>
+        <pre><code>function test() {  
+    console.log(this.name);
+}
+let object = {name : "mark"};
+        
+test.call(object);</code></pre>
+        <p>We printing on the console "mark" because we said with the call method to run the "test" function filling the "this argument" with object</p>
+        <br>
+        <p><b>Personalized properties </b>You can create personalized properties for your functions. Here im creating a property to give a brief description of my function</p>
+        <pre><code>let myfunct = function (){
+    this.content = "Function to test the description of a function";
+    console.log(this.content)  
+    console.log(this)
+};
+myfunction()</code></pre>
+    <h3>Paradoxical functions</h3>
+        <p>You can do paradoxical processes inside your functions, like call a function inside the function itself, or even you can redeclare your function when you call it</p>
+    <h3>Callbacks</h3>
+        <p>A call back is when you enter a function as an argument of other function</p>
+        <p>This is useful because you can run different functions and define their arguments with values inside your function. Also, this denmostrate that functions can be threated like any other Javascript object</p>
+        <pre><code>function sayHello(name){
+    console.log("hello " + name);
+}
+
+function callbacker(name, callback){
+    let usedname = name
+    callback(usedname);
+}
+
+callbacker("world",sayHello);</code></pre>
+        <p>With this code we are printing "Hello world" using the "sayHello" function as a callback</p>
+
+    <h3>Ajax additional uses</h3>
+        <p>We know that ajax sends a request to a server and then gets a response, mostly a JSON or XML file. Additional to get the response and then transform it to a javascript readable item with "response.json" we can use "response.blob" to instead of 
+            return a JSON array, we can return a blob object, this means Binary Large Object and is raw data, used mostly in images or sounds. </p> 
+        <a href="../index.html">Back to index</a>
+        <script src="w7.js"></script>
+    </main>
+</body>
+</html>
