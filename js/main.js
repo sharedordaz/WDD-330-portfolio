@@ -15,7 +15,9 @@ let olarray = [
                  url: "week5/index5.html"},    
                 
                 {label: "Week 7",
-                url: "week7/index7.html"}
+                url: "week7/index7.html"},
+                {label: "Week 8",
+                 url: "week8/index8.html"}
             ];
 
 let ol = document.querySelector("ol");

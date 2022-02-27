@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Week 7</title>
+</head>
+<body>
+    <main>
+        <h1>What i learned this week</h1>
+        <h3>The transform property</h3>
+        <p><b>Translate</b> is a CSS function that allow to move an object in base of the relative position. This is useful if you don`t want to use position: absolute</p>
+        <p><b>Scale</b> function let you to change the size of an object, and the arguments of the function are the `X` and the `y` axis in that order</p>
+        <h3>Webkit</h3>
+        <p><code>-webkit-</code>Can be used when you need to use properties that are avaliable to old browsers</p>
+        
+        <h3>Transitions</h3>
+        <p>A transition is when you </p>
+        <p><b>Transition-duration</b> is to write how many time in seconds a transition will last</p>
+        <p><b>Transition</b> is a property that let you writte all the transition properties on a summarized way. Example: </p>
+        <code>transition: transform 0.2s ease-out 50ms, color 0.1s linear 50ms;</code>
+
+        <h3>Animations</h3>
+        <p>You can run animations with <code>@-webkit-keyframes myAnimation</code></p>
+        <p>If you notice, myAnimation is a custom animation. You have to create animations with `Translate` and `Transitions`</p>
+        <pre><code>@keyframes myAnimation
+    appearDisappear {     
+    0%, 100% {    
+    opacity: 0;    
+    }    
+    20%, 80% {    
+    opacity: 1;    
+    }
+}</code></pre>
+        <p>You can define how much an animation will last with <code>animation-duration: 300ms;</code></p>
+        
+        <h3>Canvas</h3>
+        <p>A canvas object is an HTML object where we can draw, using JavaScript. You can use methods like <code>fillRect</code> and <code>strokeRect</code> to draw over the canvas object</p>
+        <p>Also, you can add images to the canvas with <code>drawImage</code> and after enter in the arguments the image object and the coordinates</p>
+        
+        <h3>SVG</h3>
+        <p>With SVG you can draw items directly in your site, using vectors. You basically use a svg tag and inside that you use forms tags like `circle`</p>
+        <p><a href="https://inkscape.org/">Inkscape.org</a> offers the service of creating SVG items based on an image</p>
+        
+        <a href="../index.html">Back to index</a>           
+    </main>
+</body>
+</html>
