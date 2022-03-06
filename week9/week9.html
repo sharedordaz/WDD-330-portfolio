@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Week 7</title>
+</head>
+<body>
+    <main>
+        <h1>This week work</h1>
+        <h3>The window object</h3>
+            <p>The window object is a global object, the bigger object in Javascript. Like other DOM objects (div, p, etc) it have its own properties</p>
+        <h3>Window methods: Show info and inputs</h3>
+            <p><b>window.alert("")</b> Prints a pop-up message on the screen</p>
+            <p><b>window.confirm("")</b> Runs a pop-up message with a boolean input (Ok or cancel)</p>
+            <p><b>window.prompt("")</b> Runs a pop-up message with a open input. When you click on "OK" it returns the entered value</p>
+
+        <h3>More Methods: Give information</h3>
+            <p><b>window.navigator.userAgent</b> returns the browser and what operative system the user is using</p>
+            <p><b>window.location.href</b> returns the URL as a string</p>
+            <p>You can also use <code>window.location.host</code>, <code>window.location.hostname</code> or <code>window.location.origin</code></p>
+            <p><b>window.location.pathname</b> provides the pathname you are within</p>
+            <p><b>window.history</b>access the previously visited pages in the current seccion. You can display by index the elements of the list with <code>window.history.go(index)</code></p>
+            <br>
+            <p><b>Get user location: </b><code>navigator.geolocation.getCurrentPosition()</code> gets the position of the user, and you can print it, for example, with <i>latitude</i> and <i>longitude</i> methods</p>
+        
+        <h3>Do actions</h3>
+            <p><b>window.open('URL','windowTitle',width=?,height=?,resizable=yes):</b>This open a new window with an specific URL. You have to specify parameters</p>
+            <!-- <script>window.open("https://www.byui.edu/","_blank" , resizable="no")</script> -->
+
+        <h1>Store information</h1>
+            <h3>Cookies</h3>
+            <p>A cookie is a piece of information that is stored so the website can remember actions done by the user. In United States, there is a law that requires you to ask the user if he wants to use cookies, because sometimes they are used for tracking</p>
+            <p>Example of a cookie:</p>
+            <code>"name= Shared; user=true;"</code>
+            <p>You can create cookies and modify them with <code>document.cookie</code>. The cookie object works like a string object, and its maximum size is 4KB</p>
+            <p>You can make the cookies expire with the <code>expires=</code> special value that uses  or with Date.time the <code>max-age=</code> value that uses seconds</p>
+            <p>To make your cookies more secure, write <code>secure</code> at the end of the cookie</p>
+        <h3>localStorage</h3>
+            <p>localStorage is a type of object that is saved even if you close your browser. You can save info with <code>localStorage.setItem("key", "value")</code> and access to that with <code>localStorage.getItem("key")</code>. Also you can write something like this: <code>localstorage.key</code></p>
+            <p>If you notice, localStorage works like a dictionary</p>
+            <p>You can remove items from localStorage with <code>localStorage.removeItem("key")</code> or clear the localStorage with <code>localStorage.clear()</code></p>
+            <p>There is other method that is the same that localStorage, but works only in the current session, is called <b>sessionStorage</b></p>
+        <a href="../index.html">Back to index</a>           
+    </main>
+</body>
+</html>
