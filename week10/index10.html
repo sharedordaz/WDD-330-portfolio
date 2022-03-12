@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Week 10</title>
+</head>
+<body>
+    <main>
+        <h1>This week study</h1>
+        <h3>Valuidating forms</h3>
+        <p>Is important to know certain attributes that you can apply on the html forms and inputs so you can protect you site and your users</p>
+        <p><b>Required</b> is an HTML attribute that forces the user to enter information on an input. You cannot leave it blank</p>
+        <p><b>pattern</b> specifies an specific pattern you want to use. Within brackets you can enter what kind of characters are permitted,
+            for example <code>[a-zA-Z0-9]</code> specifies that only are permitted letters from a-z and numbers from 0-9. Between curly 
+            braces you can enter the number of characters permitted in the input, like <code>{0-5}</code> to 0 to 5 characters</p>
+        <h3>CSS Forms</h3>
+        <p><b>:valid</b> pseudoclass is for a "valid" input element</p>
+        <p><b>:invalid</b> if for invalid elements</p>
+
+        <h3>Validation API</h3>
+        <p>You can use the method <code>.checkValidity()</code> over the input DOM object that returns true or false if the input is valid according to the given parameters.</p>
+
+        <h3>Fetch API</h3>
+        <p>Fetch API is like jQuery.ajax, but the difference is that almost never rejects the request, returning "false" instead</p>
+        <p>By first, we do the fetch, for example <code>fetch('www.mylink.com')</code> and after we say <code>.then(response => response.json)</code> that is returning the response and transforming it into a json object with the .json method</p>
+        <h3>Post info with fetch</h3>
+        <p>we can a second argument (other than the URL) to the fetch method. This is an object that have attributes like <code>method:</code> or <code>credentials:</code>. This is the setup of the fetch request. If you put <code>method: 'POST'</code> you will be posting info into the server </p>
+        <a href="../index.html">Back to index</a>           
+    </main>
+</body>
+</html>
