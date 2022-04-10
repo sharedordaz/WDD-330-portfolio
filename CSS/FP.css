@@ -41,16 +41,9 @@ nav img{
     padding-left: 3%;
     max-width: 10%;
 }
-nav ul{
-    display: flex;
-}
-nav ul li{
-    padding: 0% 20% 0% 20%;
-    text-align: center;
-    text-justify: inter-word;
-}
-nav ul li:hover{
-    background-color: var(--grey);
+nav p{
+    color:white;
+    padding: 0% 10% 0% 10%;
 }
 /*? MAIN */
 body{
@@ -113,7 +106,7 @@ button:active{
   }
 .cart_div{
     position:fixed;
-    visibility: visible;
+    visibility: hidden;
     top: 10%;
     left: 10%;
 
@@ -153,4 +146,18 @@ button:active{
 .get_total:active{
     background-color: white;
     color: black;
+}
+/*?Google */ 
+.gsc-control-cse gsc-control-cse-en{
+    background-color:black;
+
+}
+.google{
+    float:right;
+    margin-left:20%
+}
+.gcse-search{
+    background-color: #2e2e2e;
+    animation-name: fadeshow;
+    animation-duration: 1s;
 }

@@ -30,6 +30,22 @@ fetch("cart.json")
     total_array.push(JSONObject);
 })
 
+if(window.localStorage.length != 0){
+    if(window.confirm("There is information saved in your computer. Want to use it?")){
+        console.log(localStorage.getItem("one"));
+        console.log(total_array.length);
+        total_array[0].desk_computer.number = localStorage.getItem("one");
+        total_array[0].gaming_computer.number = localStorage.getItem("two");
+        total_array[0].design_computer.number = localStorage.getItem("three");
+        total_array[0].basic_server.number = localStorage.getItem("four");
+        total_array[0].advanced_server.number = localStorage.getItem("five");
+        
+        }
+    else{
+        localStorage.clear();
+    }
+
+}
 function add_cart_1(){
     let quantity = Number(document.querySelector(".desk_quantity").value); // Get the quantity
 
@@ -163,10 +179,18 @@ function cart(){
     }
     get_total()
     document.querySelector(".cart_div").style.visibility = 'visible';
+    save_info()
     
 }
 
+function save_info() {
+    localStorage.setItem("one", total_array[0].desk_computer.number);
+    localStorage.setItem("two", total_array[0].gaming_computer.number);
+    localStorage.setItem("three", total_array[0].design_computer.number);
+    localStorage.setItem("four", total_array[0].basic_server.number);
+    localStorage.setItem("five", total_array[0].advanced_server.number);
 
+}
 function get_total(){
     
     absolute_total =  (total_array[0].desk_computer.price * total_array[0].desk_computer.number) + (total_array[0].gaming_computer.price * total_array[0].gaming_computer.number) +(total_array[0].design_computer.price* total_array[0].design_computer.number) + (total_array[0].basic_server.price * total_array[0].basic_server.number) + (total_array[0].advanced_server.price * total_array[0].advanced_server.number);
@@ -176,4 +200,6 @@ function get_total(){
     text.setAttribute("id", "totaltext");
     cart_div.appendChild(text);
 }
+
+
 
