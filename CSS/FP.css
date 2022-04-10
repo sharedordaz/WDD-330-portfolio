@@ -107,9 +107,30 @@ button:active{
 
 
 /*---------------*/
-
+@keyframes fadeshow {
+    from {opacity:0;}
+    to {opacity:0.9;}
+  }
 .cart_div{
-    visibility: hidden;
+    position:fixed;
+    visibility: visible;
+    top: 10%;
+    left: 10%;
+
+    background-color: var(--sup-blue);
+    padding:1em;
+    animation-name: none;
+    animation-duration: 1s;
+}
+.cart_div h2{
+    color:#36494E;
+}
+#x{
+    float:right;
+    filter: grayscale(1);
+}
+#x:hover{
+    filter:grayscale(0.5);
 }
 .cart{
     width: 100%;

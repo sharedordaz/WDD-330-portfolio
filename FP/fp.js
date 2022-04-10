@@ -129,7 +129,8 @@ function append_cells(Name, price, quantity, a_total){
 }
 
 function cart(){
-    document.querySelector(".cart_div").innerHTML = "<h2>Cart</h2><table class='cart'> <tr>   <th>Name</th>  <th>Price</th>   <th>Quantity</th>  <th>Total</th></tr></table>";
+    document.querySelector(".cart_div").innerHTML = `<h4 id='x' onclick="document.querySelector('.cart_div').style.visibility = 'hidden'; document.querySelector('.cart_div').style.animationName = 'none';">❌</h4><h2>Cart</h2><table class='cart'> <tr>   <th>Name</th>  <th>Price</th>   <th>Quantity</th>  <th>Total</th></tr></table>`;
+    document.querySelector(".cart_div").style.animationName = "fadeshow";
     if (total_array[0].desk_computer.number != 0) {
         let price = total_array[0].desk_computer.price; //Get the price
         let quantity = total_array[0].desk_computer.number; //Get the price
