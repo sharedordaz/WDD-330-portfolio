@@ -10,7 +10,11 @@
 </head>
 <body>
     <nav>
-    <img src="logo.png" alt="ORSA Technologies">
+        <img src="images/logo.png" alt="ORSA Technologies">
+        <ul>
+            <li onclick="window.open('#','_self')">Home</li>
+            <li onclick="window.open('offer_searcher.html')">Search for offers</li>
+        </ul>
     </nav>
     <main>
         <div class="objects">
@@ -50,12 +54,16 @@
                 <button onclick="add_cart_5()">Add to cart</button>
             </div>
         </div>
-        <h2>Cart</h2>
-        <table class="cart"> 
-            <tr>   <th>Name</th>  <th>Price</th>   <th>Quantity</th>  <th>Total</th></tr>
-    
-        </table>
-        <button onclick="get_total()" class="get_total">Get total</button>
+        <div class="cart_div">
+            <h2>Cart</h2>
+            <table class="cart"> 
+                <tr>   <th>Name</th>  <th>Price</th>   <th>Quantity</th>  <th>Total</th></tr>
+        
+            </table>
+            <button onclick="get_total()" class="get_total">Get total</button>
+            
+        </div>
     </main>
+    <script src="fp.js"></script>
 </body>
 </html>
