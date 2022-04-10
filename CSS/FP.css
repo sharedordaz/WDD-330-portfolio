@@ -22,10 +22,13 @@ p, i, b, input, button, td{
 p{
     font-weight: 200;
 }
-input{
+.nested input{
     background-color: grey;
     border: 1px solid black;
     color: white;
+    cursor:cell;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
 }
 img{
     max-width: 100%;
@@ -104,6 +107,10 @@ button:active{
 
 
 /*---------------*/
+
+.cart_div{
+    visibility: hidden;
+}
 .cart{
     width: 100%;
 }

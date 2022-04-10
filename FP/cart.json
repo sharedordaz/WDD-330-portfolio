@@ -1,5 +1,27 @@
-{
-    "main": [
-
-    ]
+{   "desk_computer":  {
+    "name": "Desktop Computer",
+    "price": 1000,
+    "number" : 0
+    },
+    "gaming_computer":  {
+        "name": "Gaming Computer",
+        "price": 2000,
+        "number" : 0
+        },
+    "design_computer":  {  
+        "name": "Design Computer",
+        "price": 1500,
+        "number": 0
+        },
+    "basic_server":   {
+        "name": "Basic Server",
+        "price": 1000,
+        "number": 0
+        },
+    "advanced_server": {
+        "name": "Advanced Server",
+        "price": 2500,
+        "number": 0
+        }
+    
 }
