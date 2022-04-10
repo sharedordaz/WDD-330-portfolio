@@ -5,19 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/FP.css">
+    <link rel="stylesheet" href="../CSS/normalize.css">
     <title>ORSA Technologies</title>
 </head>
 <body>
     <nav>
     <img src="logo.png" alt="ORSA Technologies">
-    <ul>
-        <li>
-            
-        </li>
-    </ul>
     </nav>
     <main>
-
+        <div class="objects">
+            <div class="nested">
+                <h4 class="h41">Desktop Computer</h4>
+                <img src="images/Desktop.jpg" alt="Computer img" width="150px">   
+                <div><p class="p1">$100</p></div>         
+                <i>Quantity: </i><input class="desk_quantity">
+                <button onclick="add_cart_1()">Add to cart</button>
+            </div>
+            <div class="nested">
+                <h4 class="h42">Gaming Computer</h4>
+                <img src="images/Gaming.jpg" alt="Computer img" width="150px">   
+                <div><p class="p2">$2000</p></div>         
+                <i>Quantity: </i><input class="g_quantity">
+                <button onclick="add_cart_2()">Add to cart</button>
+            </div>
+            <div class="nested" >
+                <h4 class="h43">Design Computer</h4>
+                <img src="images/Design.jpg" alt="Computer img" width="150px">   
+                <div><p class="p3">$1500</p></div>         
+                <i>Quantity: </i><input class= "dsn_quantity">
+                <button onclick="add_cart_3()">Add to cart</button>
+            </div>
+            <div class="nested" >
+                <h4 class="h44">Basic Server</h4>
+                <img src="images/s-server.jpg" alt="Computer img" width="150px">   
+                <div><p class="p4">$500</p></div>         
+                <i>Quantity: </i><input class= "s_quantity">
+                <button onclick="add_cart_4()">Add to cart</button>
+            </div>
+            <div class="nested" >
+                <h4 class="h45">Advanced Server</h4>
+                <img src="images/big-server-2.png" alt="Computer img" width="150px">   
+                <div><p class="p5">$2500</p></div>        
+                <i>Quantity: </i><input class= "as_quantity">
+                <button onclick="add_cart_5()">Add to cart</button>
+            </div>
+        </div>
+        <h2>Cart</h2>
+        <table class="cart"> 
+            <tr>   <th>Name</th>  <th>Price</th>   <th>Quantity</th>  <th>Total</th></tr>
+    
+        </table>
+        <button onclick="get_total()" class="get_total">Get total</button>
     </main>
 </body>
 </html>
