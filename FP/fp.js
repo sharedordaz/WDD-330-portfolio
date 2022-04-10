@@ -29,26 +29,28 @@ fetch("cart.json")
     
     total_array.push(JSONObject);
 })
-
-if(window.localStorage.length != 0){
-    if(window.confirm("There is information saved in your computer. Want to use it?")){
-        console.log(localStorage.getItem("one"));
-        console.log(total_array.length);
-        total_array[0].desk_computer.number = localStorage.getItem("one");
-        total_array[0].gaming_computer.number = localStorage.getItem("two");
-        total_array[0].design_computer.number = localStorage.getItem("three");
-        total_array[0].basic_server.number = localStorage.getItem("four");
-        total_array[0].advanced_server.number = localStorage.getItem("five");
-        
+function renew(){
+    console.log(true);
+    if(window.localStorage.length != 0){
+        if(window.confirm("There is information saved in your computer. Want to use it?")){
+            //console.log(localStorage.getItem("one"));
+            //console.log(total_array.length);
+            total_array[0].desk_computer.number = localStorage.getItem("one");
+            total_array[0].gaming_computer.number = localStorage.getItem("two");
+            total_array[0].design_computer.number = localStorage.getItem("three");
+            total_array[0].basic_server.number = localStorage.getItem("four");
+            total_array[0].advanced_server.number = localStorage.getItem("five");
+            
+            }
+        else{
+            localStorage.clear();
         }
-    else{
-        localStorage.clear();
-    }
 
+    }
 }
+
 function add_cart_1(){
     let quantity = Number(document.querySelector(".desk_quantity").value); // Get the quantity
-
     total_array[0].desk_computer.number = total_array[0].desk_computer.number + quantity;
 
     if (quantity == ""){
@@ -145,6 +147,7 @@ function append_cells(Name, price, quantity, a_total){
 }
 
 function cart(){
+    
     document.querySelector(".cart_div").innerHTML = `<h4 id='x' onclick="document.querySelector('.cart_div').style.visibility = 'hidden'; document.querySelector('.cart_div').style.animationName = 'none';">❌</h4><h2>Cart</h2><table class='cart'> <tr>   <th>Name</th>  <th>Price</th>   <th>Quantity</th>  <th>Total</th></tr></table>`;
     document.querySelector(".cart_div").style.animationName = "fadeshow";
     if (total_array[0].desk_computer.number != 0) {
